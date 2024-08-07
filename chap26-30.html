@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                      // chap26-30
+
+// 1. Write a program that takes a positive integer from user &
+//    display the following in your browser.
+
+      document.write("<h1>Positive Integer:</h1>");
+      var num = prompt("Enter any positive integer");
+      document.write("number:" + " " +num+ '<br>');
+      document.write("Round off value:" + " " + Math.round(num) + '<br>');
+      document.write("Floor Value:" + " " + Math.floor(num) + '<br>');
+      document.write("Ceil value:" + " " + Math.ceil(num) + '<br>');
+
+// 2. Write a program that takes a negative floating point
+//    number from user & display the following in your browser.
+
+      document.write("<h1>Negative floating point:</h1>");
+      var negativeNum = prompt("Enter any negative integer");
+      document.write("number:" + " " +negativeNum+ '<br>');
+      document.write("Round off value:" + " " + Math.round(negativeNum) + '<br>');
+      document.write("Floor Value:" + " " + Math.floor(negativeNum) + '<br>');
+      document.write("Ceil value:" + " " + Math.ceil(negativeNum) + '<br>');
+
+
+// 3. Write a program that displays the absolute value of a
+//    number.
+
+     document.write("<h1>Absolute value:</h1>");
+     var integer = -4;
+     document.write("The absolute value of" + " " + integer + " " + "is" + " " + Math.abs(integer));
+
+// 4. Write a program that simulates a dice using random()
+//    method of JS Math class. Display the value of dice in your
+//    browser.:
+
+     document.write("<h1>Dice Values:</h1>");
+     var bigDecimal = Math.random();
+     var improvedNum = (bigDecimal * 6) + 1;
+     var numberOfStars = Math.floor(improvedNum);
+     document.write("Random dice value:" + " " +numberOfStars);
+    
+// 5. Write a program that simulates a coin toss using random()
+//    method of JS Math class. Display the value of coin in your
+//    browser
+
+     document.write("<h1>Coin Toss:</h1>");
+     var coin = Math.random();
+     var result= coin < 0.5 ? "heads" : "tails";
+     document.write(result).innerText = resut;
+    </script>
+</body>
+</html>
